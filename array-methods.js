@@ -23,9 +23,13 @@ var capPlanets = planets.map(
 var ePlanets = planets.filter(
   function(planet){
     return planet.includes('e');
-  })
-console.log(ePlanets)
+  });
+
 
 // Use the reduce method to create a sentence from the words in the following array
 
 var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
+var sentence = words.reduce(
+  function(joe, shep){
+    return joe + " " + shep;
+  })
